@@ -1,0 +1,12 @@
+# ignore node modules folder
+node_modules/
+
+# ignore all log files
+*.log
+
+# ignore files with data in them
+FilesNotUploadedToGitHub/
+ModelCheckpoints/
+ModelData/
+NonDataPlots/
+iwslt_data/
