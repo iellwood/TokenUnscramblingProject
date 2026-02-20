@@ -15,7 +15,7 @@ All the scripts were run in python version 3.9.13 on Windows 11 with 4090 GPU wi
 To reproduce the results of the paper, the code must be run in the following order
 
 1) `createGermanAndEnglishSentenceFiles.py` followed by `createtokenizer.py`. These scripts download the iwslt dataset (German to English) and create an appropriate tokenizer for the two languages.
-2) `TrainScrambledModels` trains 15 models with a scrambled attention layer. This is enough to reproduce every figure except Fig. 2 panels A & B. These panels require running the script again with `number_of_replicates = 4` and the lines of code:
+2) `TrainScrambledModels` trains 15 models with a scrambled attention layer. This is enough to reproduce every figure except Fig. 2 panels A & B. These panels require the control models (no scrambled attention layers), which can be obtained by running the script again with `number_of_replicates = 4` and the lines of code:
    ```
    train_model(
         'FAModel_SeparateScrambleMatrices_replicate_' + str(replicate_number),
@@ -36,7 +36,6 @@ To reproduce the results of the paper, the code must be run in the following ord
     )
    ```
   
-   
 3) `AnalyzeCheckpoints.py`: This script produces the bulk of the analysis of the paper and saves it in the folder `ModelData/` which must exist for the script to run successfully. 
 4) `GetTestNLLs.py`: This script is essential only for Figure 2 panels A & B and requires that the control transformer models have been trained.
 5) `PlotScripts/PlotDataFiguresForPaper.py` This produces all of the plots of the paper and saves them in the folder `PlotScripts/Plots/`. Note that this script requires that the control models have been trained, but this requirement can be eliminated by setting `plot_test_loss_for_scrambled_and_unscrambled_models = False`. This file also performs the same PCA analysis shown in the paper for the value scramble matrices if one sets `plot_PCA_analysis_for_value_scramble_matrix = True`.
