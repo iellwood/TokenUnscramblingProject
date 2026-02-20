@@ -8,7 +8,7 @@ This repository contains the code to implement the model described in the paper,
 
 #### Running the scripts
 
-All the scripts were run in python version 3.9.13 on Windows 11. Required libraries are `numpy`, `matplotlib`, `scipy`, `torch`, and `pickle`. PyCharm community edition was used for the management of the project and running the scripts. 
+All the scripts were run in python version 3.9.13 on Windows 11 with 4090 GPU with 48G of memory. Required libraries are `numpy`, `matplotlib`, `scipy`, `torch`, and `pickle`. PyCharm community edition was used for the management of the project and running the scripts. 
 
 #### Organization of the scripts for figure generation
 
