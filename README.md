@@ -1,4 +1,4 @@
-<img src="https://github.com/iellwood/TokenUnscramblingProject/blob/main/Figure1.jpg" alt="Illustration of the equivalent computation to a fixed-weight neural network that implements transformer attention if the input weight matrix is changed." width="600">
+<img src="Figure1.png" alt="Illustration of the equivalent computation to a fixed-weight neural network that implements transformer attention if the input weight matrix is changed." width="600">
 
 ### Token unscrambling in fixed-weight biological models of transformer attention
 
