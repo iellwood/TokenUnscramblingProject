@@ -14,7 +14,7 @@ All the scripts were run in python version 3.9.13 on Windows 11 with a 4090 GPU 
 
 To reproduce the results of the paper, the code must be run in the following order
 
-1) `createGermanAndEnglishSentenceFiles.py` followed by `createtokenizer.py`. These scripts download the iwslt dataset (German to English) and create an appropriate tokenizer for the two languages.
+1) `DataImportUtils/createGermanAndEnglishSentenceFiles.py` followed by `DataImportUtils/createtokenizer.py`. These scripts download the iwslt dataset (German to English) and create an appropriate tokenizer for the two languages.
 2) `TrainScrambledModels` trains 15 models with a scrambled attention layer. This is enough to reproduce every figure except Fig. 2 panels A & B. These panels require the control models (no scrambled attention layers), which can be obtained by running the script again with `number_of_replicates = 4` and the lines of code:
    ```
    train_model(
