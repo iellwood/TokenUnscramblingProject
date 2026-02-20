@@ -4,7 +4,7 @@
 
 #### Ian T. Ellwood, Department of Neurobiology and Behavior, Cornell University
 
-This repository contains the code to implement the model described in the paper, "Token unscrambling in fixed-weight biological models of transformer attention". While we have made every attempt to make sure that all the files needed to reproduce the paper's figures are available, please contact the author with any questions or concerns about the code or aspects of the model. Some of the files produced by the stimulations are very large. If the complete datafiles are required, a link to a dropbox containing the PyCharm project can be made available upon request.
+This repository contains the code to implement the model described in the paper, "Token unscrambling in fixed-weight biological models of transformer attention". While we have made every attempt to make sure that all the files needed to reproduce the paper's figures are available, please contact the author with any questions or concerns about the code or aspects of the model. Some of the files produced by running the script are very large and can take 1-2 weeks on a modern GPU to reproduce. These include the downloaded iwslt dataset, the model checkpoints and the two files produced from analyzing the model checkpoints. If these files are needed, please sent a request to the author and a dropbox link with the full pycharm project will be sent. 
 
 #### Running the scripts
 
