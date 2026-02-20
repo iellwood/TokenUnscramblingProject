@@ -1,4 +1,4 @@
-<img src="https://github.com/iellwood/MatchAndControlPaper/blob/main/Match_and_Control_Image_For_GitHub.jpg" alt="Illustration of the Match-and-Control principle" width="600">
+<img src="https://github.com/iellwood/TokenUnscramblingProject/blob/main/Figure1.jpg" alt="Illustration of the equivalent computation to a fixed-weight neural network that implements transformer attention if the input weight matrix is changed." width="600">
 
 ### Token unscrambling in fixed-weight biological models of transformer attention
 
